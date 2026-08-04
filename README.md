@@ -2,7 +2,7 @@
 
 Google Docs MCP Pack — read, create, and edit Google Docs via OAuth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
@@ -12,7 +12,7 @@ Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents 
 | `docs_get_text` | Extract plain text from a Google Doc without formatting or structure. Use when you need raw text content only. |
 | `docs_create` | Create a new Google Doc with a title. Returns the document ID needed for editing operations. |
 | `docs_insert_text` | Insert text at a specific position in a Google Doc (e.g., position 0 for start, position 50 for middle). |
-| `docs_append_text` | Add text to the end of a Google Doc. Use when insertion position doesn\'t matter. |
+| `docs_append_text` | Add text to the end of a Google Doc. Use when insertion position doesn't matter. |
 | `docs_replace_text` | Find and replace all occurrences of text in a Google Doc with new text. |
 
 ## Quick Start
@@ -29,7 +29,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -53,7 +53,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
