@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-google_docs",
-  "version": "0.1.2",
-  "description": "Google Docs MCP Pack — read, create, and edit Google Docs via OAuth.",
+  "version": "0.1.3",
+  "description": "Google Docs MCP Pack — read, create, and edit Google Docs via OAuth. Reuses the google_sheets OAuth connection (same Google OAuth client + scopes).",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-1a1d6d3b90b4a2eab7ff4b248ee0d7463b645303cca659d7114869abe656b0ed",
-    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
+    "sourceHash": "v1-3b77fdd86cbdf85c891a89a2f80e525888c92f75a91b912e4fd3a847d57ff891",
+    "sourceCommit": "445bacc5596a845c12d6945fbfcdf330ef60dcc4"
   }
 }

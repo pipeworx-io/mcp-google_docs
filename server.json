@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/google_docs",
   "title": "Google_docs",
-  "description": "Google Docs MCP Pack — read, create, and edit Google Docs via OAuth.",
-  "version": "0.1.2",
+  "description": "Google Docs MCP Pack — read, create, and edit Google Docs via OAuth. Reuses the google_sheets…",
+  "version": "0.1.3",
   "websiteUrl": "https://pipeworx.io/packs/google_docs",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-google_docs",
