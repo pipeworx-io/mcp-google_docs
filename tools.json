@@ -1,0 +1,126 @@
+[
+  {
+    "name": "docs_get",
+    "description": "Retrieve a Google Doc by ID. Returns title, formatted body content, and document structure.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "description": "Document ID (from the URL)"
+        }
+      },
+      "required": [
+        "document_id"
+      ]
+    }
+  },
+  {
+    "name": "docs_get_text",
+    "description": "Extract plain text from a Google Doc without formatting or structure. Use when you need raw text content only.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "description": "Document ID"
+        }
+      },
+      "required": [
+        "document_id"
+      ]
+    }
+  },
+  {
+    "name": "docs_create",
+    "description": "Create a new Google Doc with a title. Returns the document ID needed for editing operations.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title for the new document"
+        }
+      },
+      "required": [
+        "title"
+      ]
+    }
+  },
+  {
+    "name": "docs_insert_text",
+    "description": "Insert text at a specific position in a Google Doc (e.g., position 0 for start, position 50 for middle).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "description": "Document ID"
+        },
+        "text": {
+          "type": "string",
+          "description": "Text to insert"
+        },
+        "index": {
+          "type": "number",
+          "description": "Character index to insert at (1 = start of body)"
+        }
+      },
+      "required": [
+        "document_id",
+        "text"
+      ]
+    }
+  },
+  {
+    "name": "docs_append_text",
+    "description": "Add text to the end of a Google Doc. Use when insertion position doesn't matter.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "description": "Document ID"
+        },
+        "text": {
+          "type": "string",
+          "description": "Text to append"
+        }
+      },
+      "required": [
+        "document_id",
+        "text"
+      ]
+    }
+  },
+  {
+    "name": "docs_replace_text",
+    "description": "Find and replace all occurrences of text in a Google Doc with new text.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "description": "Document ID"
+        },
+        "find": {
+          "type": "string",
+          "description": "Text to find"
+        },
+        "replace": {
+          "type": "string",
+          "description": "Replacement text"
+        },
+        "match_case": {
+          "type": "boolean",
+          "description": "Case-sensitive match (default: false)"
+        }
+      },
+      "required": [
+        "document_id",
+        "find",
+        "replace"
+      ]
+    }
+  }
+]
